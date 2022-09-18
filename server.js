@@ -11,16 +11,6 @@ app.use(cors());
 const path = require("path");
 
 app.use("/images", express.static(path.join("backend/images")));
-
-app.use(express.static('./dist/hushbook'));
-
-app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/hushbook/'}),
-);
-
-// Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 8080);
-
 const mongoose = require("mongoose");
 const { title } = require("process");
 mongoose.connect("mongodb+srv://root:root@cluster0.qlhxjdj.mongodb.net/?retryWrites=true&w=majority", {
