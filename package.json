@@ -63,5 +63,18 @@
   "engines": {
     "node": "16.13.0",
     "npm": "8.19.1"
-  }
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PritamRane/hushbook.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PritamRane/hushbook/issues"
+  },
+  "homepage": "https://github.com/PritamRane/hushbook#readme",
+  "description": ""
 }
