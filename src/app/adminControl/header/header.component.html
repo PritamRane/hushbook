@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div class="header animate__animated animate__fadeInDown header-color">
+        <div class="left">
+            <p (click)="home()">HushBooks</p>
+        </div>
+        <div class="right">
+            <a routerLink="/admin/options/create/createuser" [routerLinkActive]="['classbtn']" mat-raised-button (click)="create()">Create</a>
+        <a [routerLink]="'/admin/options/update/updateuser'" [routerLinkActive]="['classbtn']" mat-raised-button (click)="update()">Update</a>
+        <a
+          routerLink="/admin/options/delete/deleteuser"
+          [routerLinkActive]="['classbtn']"
+          mat-raised-button
+          (click)="delete()"
+          >Delete</a
+        >
+        <a [routerLink]="'/admin/options'" [routerLinkActive]="['classbtn']" mat-raised-button (click)="home()">Home Page</a>
+        <a [routerLink]="'/'" [routerLinkActive]="['classbtn']" mat-raised-button (click)="logout()">Logout</a>
+      </div>
+
+      
+
+
+      
+
+
+    </div>
+  </body>
+</html>

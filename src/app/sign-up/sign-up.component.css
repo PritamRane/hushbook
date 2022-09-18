@@ -1,0 +1,158 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+mat-form-field,
+input {
+    width: 100%;
+    padding-left: 0%;
+    color: rgb(0, 0, 0) ;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: rgb(0, 0, 0) !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: rgb(0, 0, 0) !important;
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: rgb(0, 0, 0) !important;
+  }
+
+.mat-card {
+    margin-top: 1em;
+    width: 50%;
+    text-align: center;
+    height: 500px;
+    color: rgb(0, 0, 0);
+}
+
+.outergrid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.head {
+color: white;
+    font-size: 30px;
+}
+
+.darktoolbar {
+    color: rgb(255, 255, 255);
+}
+
+.grider {
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.signupStyle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.black-color{
+    color: black;
+}
+
+.confused {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.mat-card1 {
+    margin-top: 1em;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    height: max-content;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.right mat-form-field {
+    width: 200px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin-left: 30px;
+}
+
+.alert {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.image-preview img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.image-preview2 img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+input[type="file"] {
+    visibility: hidden;
+}
+
+.b3 {
+    background: rgb(0, 0, 0);
+    color: white;
+    position: relative;
+    top: 100px;
+    right: 140px;
+}
+
+.header-color{
+    -webkit-box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
+-moz-box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
+box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
+    background-color: #2e2e2e;
+}
+
+.register-card{
+    margin-top: 3rem;
+    border-radius: 17px;
+background: #ffffff;
+box-shadow:  7px 7px 14px #cfcfcf,
+             -7px -7px 14px #ffffff;
+}
+

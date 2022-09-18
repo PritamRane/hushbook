@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div>
+        <app-header></app-header>
+    </div>
+    <div class="updateContainer animate__animated animate__fadeIn glass-card">
+        <div class="headerinfo">
+            <p>Enter Information</p>
+            <hr />
+        </div>
+        <form (submit)="update(updateform)" #updateform="ngForm">
+            <div class="userinfo">
+                <div class="pass">
+                    <p>Title</p>
+                    <mat-form-field>
+                        <input matInput required type="text" name="title" ngModel #title="ngModel" />
+                        <mat-error *ngIf="title.invalid">Please enter a title</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <button type="submit" mat-raised-button>Delete</button>
+        </form>
+
+        <div class="updated" *ngIf="deleted && !deletionerror">
+            <p>Book deleted Succesfully..</p>
+        </div>
+        <div class="updated" *ngIf="deletionerror && !deleted">
+            <p>Error Happened while Updating..</p>
+        </div>
+    </div>
+</body>
+
+</html>

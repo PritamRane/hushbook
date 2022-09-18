@@ -1,0 +1,24 @@
+<app-search-tool-bar></app-search-tool-bar>
+
+<mat-card class="glass-card list">
+    <div >
+        <span class=" animate__animated animate__fadeIn">Favorites</span>
+    </div>
+</mat-card>
+<br />
+<div class="maincontainer">
+    <div *ngFor="let book of favBooks">
+        <mat-card class="animate__animated animate__pulse glass-card" *ngIf="book.Stock !== 0">
+            <img src="{{ book.Cover }}" width="370" height="400" />
+            <div class="author-tinfor">
+                <span class="title">{{ book.Title }}</span>
+                <span class="author">{{ book.Author }}</span>
+            </div>
+            <div class="author-tinfor">
+                <span class="price">Price: {{ book.Price }} Rs</span>
+            </div>
+        </mat-card>
+    </div>
+</div>
+<br /><br /><br />
+<app-footer></app-footer>

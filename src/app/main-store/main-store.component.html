@@ -1,0 +1,34 @@
+<body>
+    <app-search-tool-bar></app-search-tool-bar>
+
+    <div class="maincontainer">
+        <div *ngFor="let book of books">
+            <mat-card class="animate__animated animate__pulse glass-card" *ngIf="book.Stock !== 0">
+                <img src="{{ book.Cover }}" width="370" height="400"/>
+                <div class="author-tinfor">
+                    <div class="titleContainer">
+                        <span class="title"> {{ book.Title }}</span>
+                    </div>
+                    <span class="author"> {{ book.Author }}</span>
+                </div>
+                <div class="author-tinfor">
+                    <span class="price">Price: {{ book.Price }} Rs</span>
+                    <span class="stock">Stock: {{ book.Stock }}</span>
+                </div>
+                <div class="author-tinfor">
+                    <button mat-raised-button color="accent" (click)="addToCart(book)" *ngIf="isAuthenticated">
+            Purchase
+          </button>
+                    <button mat-raised-button color="primary" *ngIf="isAuthenticated" (click)="addToFavList(book)">
+            Add To my Favorites
+          </button>
+                </div>
+            </mat-card>
+            
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br />
+
+    <app-footer></app-footer>
+</body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <app-header></app-header>
+    </div>
+
+    <div class="updateContainer animate__animated animate__fadeIn glass-card">
+        <div class="headerinfo">
+            <p>Enter Book's Information</p>
+            <hr />
+        </div>
+        <form [formGroup]="form" (submit)="AdminAdding()">
+            <div class="userinfo">
+                <div class="pass">
+                    <p>Title</p>
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="title" />
+                        <mat-error *ngIf="form.get('title')!.invalid">Please enter a title</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="email">
+                    <p>Author</p>
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="author" />
+                        <mat-error *ngIf="form.get('author')!.invalid">Please enter an author</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="userinfo">
+                <div>
+                    <p>Quantity</p>
+                    <mat-form-field>
+                        <input matInput type="number" formControlName="stock" />
+                        <mat-error *ngIf="form.get('stock')!.invalid">Please enter a Quantity</mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <p>Price</p>
+                    <mat-form-field>
+                        <input matInput type="number" formControlName="price" />
+                        <mat-error *ngIf="form.get('price')!.invalid">Please enter a price</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div>
+                <!-- image starts -->
+                <div class="image-preview2" *ngIf="!imagePreview">
+                    <img src="http://localhost:3000/images/88c221f5748e7f862c444f817513d782.jpg" />
+                </div>
+                <div class="image-preview" *ngIf="imagePreview !== '' && imagePreview">
+                    <img [src]="imagePreview" />
+                </div>
+
+                <button class="b3" mat-mini-fab color="primary" type="button" (click)="filePicker.click()" aria-label="Example icon button with a menu icon">
+            <mat-icon>library_add</mat-icon>
+          </button>
+                <input type="file" #filePicker (change)="onImagePicked($event)" />
+
+                <!--image ends-->
+            </div>
+            <button type="submit" mat-raised-button>Create</button>
+        </form>
+
+        <div class="updated" *ngIf="created && !creationerror">
+            <p>Book created Succesfully..</p>
+        </div>
+        <div class="updated" *ngIf="creationerror && !created">
+            <p>Error Happened while creation..</p>
+        </div>
+    </div>
+</body>
+
+</html>

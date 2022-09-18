@@ -1,0 +1,101 @@
+<body class="all" *ngIf="!DarkState && !isAuthenticated">
+    <mat-toolbar class="animate__animated animate__fadeInDown header-color">
+        <span class="head">HushBooks</span>
+
+        <span class="spacer"></span>
+
+        <ul>      
+            <li>
+                <button mat-raised-button routerLink="/">Login</button>
+                
+            </li>
+        </ul>
+    </mat-toolbar>
+    <div class="grider">
+        <mat-card class="animate__animated animate__fadeInRight register-card" >
+            <div class="signupStyle">REGISTER</div>
+            <br />
+
+            <div class="outergrid">
+                <div>
+
+
+                    <span class="signupStyle">Enter Details</span>
+                    <form [formGroup]="form" (submit)="onSignup()">
+                        <div>
+                            <mat-form-field>
+                                <input matInput type="text" formControlName="username"  placeholder="Username" />
+                                <mat-error *ngIf="form.get('username')!.invalid">Please enter a vaild username</mat-error>
+                            </mat-form-field>
+                            <br />
+                            <mat-form-field>
+                                <input matInput type="text" formControlName="email" placeholder="Email" />
+                                <mat-error *ngIf="form.get('email')!.invalid">Please enter a vaild email</mat-error>
+                            </mat-form-field>
+                            <br />
+
+                            <mat-form-field>
+                                <input matInput type="password" formControlName="password" placeholder="Password" />
+                                <mat-error *ngIf="form.get('password')!.invalid">Please enter a long password</mat-error>
+                            </mat-form-field>
+
+                            <br />
+                            <button type="submit" mat-raised-button class="black-color">
+                Register
+              </button>
+                        </div>
+                        <div class="right">
+                            <mat-form-field>
+                                <input matInput type="number" formControlName="mobile" placeholder="Mobile Phone" />
+                                <mat-error *ngIf="form.get('mobile')!.invalid">Please enter a 10-digit mobile phone</mat-error>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <mat-label>Select Favourite Genre</mat-label>
+                                <mat-select [(value)]="selected">
+                                    <mat-option value="Fiction">Fiction</mat-option>
+                                    <mat-option value="Non-Fiction">Non-Fiction</mat-option>
+                                    <mat-option value="Horror">Horror</mat-option>
+                                    <mat-option value="Comic">Comic</mat-option>
+                                    <mat-option value="Mystery">Mystery</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <p class="alert" *ngIf="selectionAlert">
+                               Please Select a Genre
+                            </p>
+                        </div>
+                    </form>
+                    <br /><br /><br />
+                </div>
+                <!-- image starts -->
+                <div class="image-preview2" *ngIf="!imagePreview">
+                    <img src="http://localhost:3000/images/Profile_avatar_placeholder_large.png" />
+                </div>
+                <div class="image-preview" *ngIf="imagePreview !== '' && imagePreview">
+                    <img [src]="imagePreview" />
+                </div>
+
+                <button class="b3" mat-mini-fab color="dark" type="button" (click)="filePicker.click()" aria-label="Example icon button with a menu icon">
+          <mat-icon>camera_enhance</mat-icon>
+        </button>
+                <input type="file" #filePicker (change)="onImagePicked($event)" />
+            </div>
+            <br /><br /><br />
+        </mat-card>
+    </div>
+</body>
+
+<body *ngIf="isAuthenticated">
+    <mat-card class="mat-card1">
+        <div class="confused">You Are Already Logged In!!</div>
+        <img src="../../assets/alreadyLoggedIn.png" width="300" height="400" />
+        <br />
+        <button class="b1" mat-raised-button color="accent" (click)="gotoStore()">
+      Go to Store
+    </button>
+        <br />
+        <br />
+        <button class="b1" mat-raised-button color="accent" (click)="logout()">
+      LogOut
+    </button>
+    </mat-card>
+</body>

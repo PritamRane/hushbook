@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div class="maincontainer">
+        <div class="welcomedcard">
+            <mat-card class="glass-card">
+                <p class="animate__animated animate__slideInDown">
+                    Choose your desired option
+                </p>
+            </mat-card>
+        </div>
+        <div class="optioncard">
+            <mat-card class="animate__animated animate__slideInDown glass-card align-row">
+                <div class="align">
+                    <img src="../../../../assets/createUser.svg" alt="">
+                    <button mat-raised-button (click)="createuser()">CREATE USER</button>
+                </div>
+                <div class="align">
+                    <img src="../../../../assets/createBook.svg" alt="">
+                    <button mat-raised-button (click)="createbook()">CREATE BOOK</button>
+                </div>
+                
+            </mat-card>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div>
+        <app-header></app-header>
+    </div>
+    <div class="updateContainer animate__animated animate__fadeIn glass-card">
+        <div class="headerinfo">
+            <p>User Information</p>
+            <hr />
+        </div>
+        <form [formGroup]="form" (submit)="update()">
+            <div class="userinfo">
+                <div class="email">
+                    <p>Email</p>
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="email" />
+                        <mat-error *ngIf="form.get('email')!.invalid">Please enter email</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="pass">
+                    <p>Password</p>
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="password" />
+                        <mat-error *ngIf="form.get('password')!.invalid">Please enter password</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="userinfo">
+                <div class="email">
+                    <p>Username</p>
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="username" />
+                        <mat-error *ngIf="form.get('username')!.invalid">Please enter a username</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="pass">
+                    <p>Select a Genre</p>
+                    <mat-form-field>
+                        <mat-select [(value)]="selected">
+                            <mat-option value="Fiction">Fiction</mat-option>
+                            <mat-option value="Non-Fiction">Non-Fiction</mat-option>
+                            <mat-option value="Horror">Horror</mat-option>
+                            <mat-option value="Comic">Comic</mat-option>
+                            <mat-option value="Mystery">Mystery</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="userinfo">
+                <div class="email mobile">
+                    <p>Mobile Phone</p>
+                    <mat-form-field>
+                        <input matInput type="number" formControlName="mobile" />
+                        <mat-error *ngIf="form.get('mobile')!.invalid">Please enter a mobile phone</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="pass">
+                    <div>
+                        <!-- image starts -->
+                        <div class="image-preview2" *ngIf="!imagePreview">
+                            <img src="http://localhost:3000/images/Profile_avatar_placeholder_large.png" />
+                        </div>
+                        <div class="image-preview" *ngIf="imagePreview !== '' && imagePreview">
+                            <img [src]="imagePreview" />
+                        </div>
+
+                        <button class="b3" mat-mini-fab color="primary" type="button" (click)="filePicker.click()" aria-label="Example icon button with a menu icon">
+                <mat-icon>library_add</mat-icon>
+              </button>
+                        <input type="file" #filePicker (change)="onImagePicked($event)" />
+
+                        <!--image ends-->
+                    </div>
+                </div>
+            </div>
+            <p class="alertsel" *ngIf="selectionAlert">
+                Please Select a Genre
+            </p>
+            <button type="submit" mat-raised-button>Update</button>
+        </form>
+
+        <div class="created" *ngIf="updated && !error">
+            <p>User Updated Succesfully..</p>
+        </div>
+        <div class="created" *ngIf="error && !updated">
+            <p>Error Happened while updating..</p>
+        </div>
+    </div>
+</body>
+
+</html>

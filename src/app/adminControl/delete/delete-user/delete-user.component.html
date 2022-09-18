@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div>
+        <app-header></app-header>
+    </div>
+    <div class="updateContainer animate__animated animate__fadeIn glass-card">
+        <div class="headerinfo">
+            <p>User Informations</p>
+            <hr />
+        </div>
+        <form (submit)="delete(deleteform)" #deleteform="ngForm">
+            <div class="userinfo">
+                <div class="email">
+                    <p>Email</p>
+                    <mat-form-field>
+                        <input matInput required type="text" name="email" ngModel #email="ngModel" email />
+                        <mat-error *ngIf="email.invalid">Please enter email</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="pass">
+                    <p>Password</p>
+                    <mat-form-field>
+                        <input matInput required type="text" name="pass" ngModel #password="ngModel" />
+                        <mat-error *ngIf="password.invalid">Please enter password</mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <button type="submit" mat-raised-button>Delete</button>
+        </form>
+
+        <div class="deleted" *ngIf="deleted && !deletionerror">
+            <p>User deleted Succesfully..</p>
+        </div>
+        <div class="deleted" *ngIf="deletionerror && !deleted">
+            <p>Error Happened while deletion..</p>
+        </div>
+    </div>
+</body>
+
+</html>

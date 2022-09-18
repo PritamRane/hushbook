@@ -1,0 +1,25 @@
+<body>
+    <app-search-tool-bar></app-search-tool-bar>
+    <div class="maincontainer" *ngIf="book.Stock !== null">
+        <mat-card class="animate__animated animate__pulse glass-card" *ngIf="book.Stock !== 0">
+            <img src="{{ book.Cover }}" width="370" height="400" />
+            <div class="author-tinfor">
+                <span class="title">{{ book.Title }}</span>
+                <span class="author">{{ book.Author }}</span>
+            </div>
+            <div class="author-tinfor">
+                <span class="price">Price: {{ book.Price }} Rs</span>
+                <span class="stock">Stock: {{ book.Stock }}</span>
+            </div>
+        </mat-card>
+        
+    </div>
+
+    <mat-card *ngIf="book == undefined || book.Stock == null" class="div2">
+        <img src="https://cdn4.iconfinder.com/data/icons/programming-v-1/256/expand-BG-programming-59-512.png" class="animate__animated animate__fadeInUp" width="300" height="300" />
+        <p class="notfound animate__animated animate__fadeInUp">
+            Sorry,The Book You are Looking For Not Found
+        </p>
+    </mat-card>
+    <br />
+</body>

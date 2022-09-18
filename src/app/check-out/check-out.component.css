@@ -1,0 +1,13 @@
+.mat-card {
+    margin-top: 5em;
+    width: 50%;
+    /* margin-left: 25%; */
+    text-align: center;
+    margin-left: 25%;
+}
+
+.confused {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    color: black;
+}

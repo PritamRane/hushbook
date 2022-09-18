@@ -1,0 +1,20 @@
+.spinner {
+    margin-top: 25%;
+    margin-left: 40em;
+}
+
+
+/* mat-card {
+    width: 600px;
+    height: 300px;
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+    }
+} */

@@ -1,0 +1,59 @@
+<body id="all" *ngIf="!DarkState && !Login && !KeepLogin && !isAuthenticated">
+    <mat-toolbar color="primary" class="animate__animated animate__fadeInDown header-color">
+
+        <span class="head">HushBook</span>
+
+        <span class="spacer"></span>
+        
+
+        <ul>
+            <li>
+                <button mat-raised-button routerLink="/signup">Register</button>
+            </li>
+        </ul>
+    </mat-toolbar>
+    <div class="grider">
+        <mat-card class="animate__animated animate__fadeInRight register-card" >
+            <div class="loginStyle">LOGIN</div>
+            <div>
+                <br />
+
+                <span class="mat-body-5 text">Please Enter Your Username and Password</span>
+                <form (submit)="onlogging(postForm)" #postForm="ngForm">
+                    <mat-form-field>
+                        <input matInput type="text" name="username" ngModel #usernameInput="ngModel" required placeholder="Username" />
+                        <mat-error *ngIf="usernameInput.invalid">Please enter a vaild username</mat-error>
+                    </mat-form-field>
+                    <br />
+                    <mat-form-field>
+                        <input matInput type="password" name="password" ngModel #password #passwordInput="ngModel" required placeholder="Password" />
+                        <mat-error *ngIf="passwordInput.invalid">Please enter password</mat-error>
+                    </mat-form-field>
+
+                    <br />
+
+                    <button type="submit" mat-raised-button >Login</button>
+                </form>
+                <br /><br />
+                <p class="warn" *ngIf="wronginput">
+                    Wrong username or password.. Try Again
+                </p>
+            </div>
+        </mat-card>
+    </div>
+</body>
+
+
+<body *ngIf="isAuthenticated">
+    <mat-card class="mat-card1">
+        <div class="confused">You Are Already Logged In!!</div>
+        <img src="../../assets/alreadyLoggedIn.png" width="400" height="325" />
+        <br />
+        <button class="b1" mat-raised-button  (click)="gotoStore()" style="margin: 10px;">
+      Go to Store
+    </button>
+        <button class="b1" mat-raised-button  (click)="logout()" style="margin: 10px;">
+      LogOut
+    </button>
+    </mat-card>
+</body>

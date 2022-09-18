@@ -1,0 +1,142 @@
+
+mat-form-field,
+input {
+    width: 60%;
+    padding-left: 0%;
+}
+
+.mat-card {
+    margin-top: 1em;
+    width: 50%;
+    /* margin-left: 25%; */
+    text-align: center;
+}
+
+.mat-card1 {
+    margin-top: 1em;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#all {
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.head {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.darktoolbar {
+    color: white;
+}
+
+.grider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.loginStyle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.confused {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+#img1 {
+    display: none;
+    margin-left: 15px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#img2 {
+    display: block;
+    cursor: pointer;
+    animation: flash 2s infinite;
+}
+
+.click {
+    color: white;
+    margin-left: 90px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.warn {
+    color: red;
+    animation: flash 3s infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.forget:hover {
+    animation: flash 1s infinite;
+}
+.header-color{
+    -webkit-box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
+-moz-box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
+box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
+    background-color: #2e2e2e;
+}
+
+.register-card{
+    margin-top: 3rem;
+    border-radius: 17px;
+background: #ffffff;
+box-shadow:  7px 7px 14px #cfcfcf,
+             -7px -7px 14px #ffffff;
+}

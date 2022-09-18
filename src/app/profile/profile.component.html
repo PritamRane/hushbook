@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div class="maincontainer">
+        <div class="leftcontainer">
+            <div>
+                <div class="imgcontainer">
+                    <img src="{{ user.image }}" class="imgformat animate__animated animate__fadeInDown" width="250" height="250" />
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <mat-card class="cardContainer">
+            <div>
+                <p class="title animate__animated animate__fadeInDown">
+                    Profile
+                </p>
+            </div>
+            <hr />
+            <div class="inlinecontainer">
+                <div class="rowcontainers animate__animated animate__fadeInDown">
+                    <div class="font">Email</div>
+                    <div class="font" id="inform">{{ user.email }}</div>
+                </div>
+                
+            </div>
+            <div class="margintop inlinecontainer">
+                <div class="rowcontainers animate__animated animate__fadeInDown">
+                    <div class="font">Username</div>
+                    <div class="font" id="inform">{{ user.username }}</div>
+                </div>
+
+                <div class="pass2 rowcontainers animate__animated animate__fadeInDown">
+                    <div class="font">Mobile</div>
+                    <div class="font" id="inform">{{ user.mobile }}</div>
+                </div>
+                <div class="pass2 rowcontainers animate__animated animate__fadeInDown">
+                    <div class="font">Favourite Genre</div>
+                    <div class="font" id="inform">{{ user.genre }}</div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</body>
+
+</html>

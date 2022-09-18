@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div class="maincontainer">
+        <div class="welcomedcard">
+            <mat-card class="glass-card">
+                <p class="animate__animated animate__slideInDown">Hi ,ADMIN</p>
+                <p class="animate__animated animate__slideInDown">
+                    Choose your desired option
+                </p>
+            </mat-card>
+        </div>
+        <div class="optioncard">
+            <mat-card class="animate__animated animate__slideInDown glass-card">
+                <button mat-raised-button (click)="create()">Create</button>
+                <button mat-raised-button (click)="update()">Update</button>
+                <button mat-raised-button (click)="delete()">Delete</button>
+            </mat-card>
+        </div>
+    </div>
+</body>
+
+</html>

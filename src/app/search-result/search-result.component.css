@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap");
+.example-container {
+    width: 10px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    height: 100%;
+    padding: 20px;
+    margin-top: 4.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.head {
+    margin-left: 20%;
+}
+
+.sider {
+    display: grid;
+    flex-direction: row;
+}
+
+.innergrid {
+    display: grid;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.author {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.price {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.search {
+    margin-left: 1em;
+}
+
+.searchbutton {
+    margin-left: 1em;
+}
+
+.b1 {
+    color: rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.spacer1 {
+    margin-left: 1em;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+
+/* new */
+
+.title {
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    
+    color: #000000;
+}
+
+.author {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+#card1 {
+    background-color: rgb(161, 170, 175);
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.stock {
+    color: white;
+    font-size: 15px;
+}
+
+#imgpost {
+    align-items: center;
+}
+
+.innergrid {
+    display: grid;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.container {
+    width: 400px;
+    align-items: center;
+}
+
+.notfound {
+    font-size: 30px;
+    color: #ea7166;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.div2 {
+    margin-left: 30em;
+    width: 370px;
+}
+
+mat-card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    /* background: #222629; */
+    background: #25395c;
+    width: 400px;
+    margin-left: 35%;
+    margin-top: -100px;
+}
+
+.author-tinfor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stock {
+    color: #000000;
+    font-size: 15px;
+    animation: rotate 3s infinite;
+}
+
+.glass-card{
+    background: rgba( 255, 253, 253, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

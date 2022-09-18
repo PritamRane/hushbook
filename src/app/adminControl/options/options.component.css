@@ -1,0 +1,80 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+.maincontainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcomedcard{
+    border-radius: 15%;
+    position: absolute;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.welcomedcard p {
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.welcomedcard img {
+  
+    cursor: pointer;
+    align-items: center;
+}
+
+.welcomedcard img:hover {
+    transform: scale(1.07);
+}
+
+.optioncard{
+   
+    background: transparent;
+    position: absolute;
+    display: flex;
+    margin-top: 20rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.optioncard button {
+    border-radius: 20px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    
+}
+
+.optioncard button:hover {
+    background: white;
+    color: #000000;
+}
+
+.animate__animated.animate__slideInLeft {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__slideInDown {
+    --animate-duration: 2s;
+}
+
+.glass-card{
+    background: rgba( 231, 231, 231, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba(218, 200, 200, 0.434);
+}

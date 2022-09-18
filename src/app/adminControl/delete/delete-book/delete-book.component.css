@@ -1,0 +1,81 @@
+
+
+.updateContainer {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    background: #eae7dc;
+}
+
+.updateContainer p {
+
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.headerinfo p {
+    margin: 20px 20px;
+}
+
+.userinfo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+.userinfo p {
+    font-size: 20px;
+    position: relative;
+    margin-bottom: -2px;
+}
+
+mat-form-field {
+    position: relative;
+    margin-top: -40px;
+}
+
+form button {
+    position: absolute;
+    right: 300px;
+    background: hsl(0, 0%, 0%);
+    color: whitesmoke;
+    margin-top: 1em;
+}
+
+.updated {
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: rgb(0, 0, 0) !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: rgb(0, 0, 0) !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    /*change color of underline when focused*/
+    background-color: rgb(0, 0, 0) !important;
+}
+
+::ng-deep input.mat-input-element {
+    color: black;
+}
+
+.glass-card{
+    background: rgba( 231, 231, 231, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba(218, 200, 200, 0.434);
+}

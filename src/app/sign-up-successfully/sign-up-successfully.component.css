@@ -1,0 +1,26 @@
+mat-card {
+    margin-top: 5%;
+    margin-left: 40%;
+    width: max-content;
+}
+
+mat-card p {
+    margin-top: 5px;
+    
+}
+
+
+
+mat-card div {
+    margin: 10px;
+    font-size: 30px;
+}
+
+mat-card img {
+    margin-left: 70px;
+}
+
+.pn {
+    display: flex;
+    flex-direction: column;
+}

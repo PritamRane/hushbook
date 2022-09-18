@@ -1,0 +1,236 @@
+
+.example-container {
+    width: 10px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    height: 100%;
+    padding: 20px;
+    margin-top: 4.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.head {
+    margin-left: 40%;
+}
+
+.sider {
+    display: grid;
+    flex-direction: row;
+}
+
+.innergrid {
+    display: grid;
+    flex-direction: row;
+    gap: 1em;
+}
+
+body {}
+
+.title {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    overflow: hidden;
+}
+
+.author {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.price {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+#card1 {
+    /* background-color: rgb(161, 170, 175); */
+    background-color: rgb(18, 70, 224);
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    border-radius: 12px;
+}
+
+.stock {
+    color: #000000;
+    font-size: 15px;
+    animation: rotate 3s infinite;
+}
+
+#imgpost {
+    align-items: center;
+}
+
+.maincontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px 30px;
+    align-items: center;
+    /* edits*/
+}
+
+mat-card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 400px;
+    
+}
+
+mat-card:hover {
+
+    height: max-content;
+    transform: scale(1.2);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+mat-card img {
+    align-items: center;
+    cursor: pointer;
+}
+
+.author-tinfor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+mat-card button {
+    border-radius: 15px;
+    background: #000000;
+    color: #ffffff;
+}
+
+mat-card button:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.07);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.inpopupform {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+ng-template {
+    background: #25395c;
+}
+
+.popcol {
+    margin-left: 20px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.popcol .title {
+    font-size: 20px;
+}
+
+.popcol2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popcol2 button {
+    margin-left: 8px;
+    border-radius: 15px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.popcol2 button:hover {
+   
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.07);
+}
+
+.poprow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #25395c;
+}
+
+.popcol3 {
+    padding: 10px;
+}
+
+.popcol4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popcol4 button {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.popcol4 button:hover {
+    
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.07);
+}
+
+.close {
+    cursor: pointer;
+    color: #25395c;
+}
+
+hr {
+    color: #000000;
+}
+
+.modal-header {
+    background: #ffffff;
+}
+
+.glass-card{
+    background: rgba( 255, 253, 253, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

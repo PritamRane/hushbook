@@ -1,0 +1,81 @@
+.innergrid {
+    display: grid;
+    flex-direction: row;
+    gap: 1em;
+}
+
+body {}
+
+.title {
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+.author {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+#card1 {
+    background-color: rgb(161, 170, 175);
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.stock {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+#imgpost {
+    align-items: center;
+}
+
+.griding {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+
+
+.maincontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.author-tinfor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+mat-card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 400px;
+}
+
+.glass-card{
+    background: rgba( 231, 231, 231, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba(218, 200, 200, 0.434);
+}
