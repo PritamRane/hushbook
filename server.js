@@ -45,7 +45,7 @@ const storage = multer.diskStorage({
         cb(null, name + "-" + Date.now() + "." + ext);
     },
 });
-// const AuthCheck = require("../Book-Store-1/middleware/auth-check");
+
 db.on("error", function(err) {
     console.log(err);
 });
