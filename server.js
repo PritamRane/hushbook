@@ -240,7 +240,6 @@ app.post("/api/getuser", (req, res, next) => {
     });
 });
 
-// app.post("/api/getcurrentUser", (req, res, next) => {});
 
 const userSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true },
