@@ -47,7 +47,7 @@ export class OverallService {
     data.append('Stock', stock.toString());
     data.append('Author', author);
 
-    data.append('image', image, title);
+    data.append('image', image);
     console.log('data is ' + data);
 
     return this.http.post('http://localhost:3000/addBook', data).subscribe(

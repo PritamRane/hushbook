@@ -43,24 +43,18 @@
                         <mat-error *ngIf="form.get('price')!.invalid">Please enter a price</mat-error>
                     </mat-form-field>
                 </div>
+                <div>
+                    <p>Image Url</p>
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="image" />
+                        <mat-error *ngIf="form.get('image')!.invalid">Enter img url</mat-error>
+                    </mat-form-field>
+                </div>
             </div>
 
-            <div>
-                <!-- image starts -->
-                <div class="image-preview2" *ngIf="!imagePreview">
-                    <img src="http://localhost:3000/images/88c221f5748e7f862c444f817513d782.jpg" />
-                </div>
-                <div class="image-preview" *ngIf="imagePreview !== '' && imagePreview">
-                    <img [src]="imagePreview" />
-                </div>
 
-                <button class="b3" mat-mini-fab color="primary" type="button" (click)="filePicker.click()" aria-label="Example icon button with a menu icon">
-            <mat-icon>library_add</mat-icon>
-          </button>
-                <input type="file" #filePicker (change)="onImagePicked($event)" />
 
-                <!--image ends-->
-            </div>
+           
             <button type="submit" mat-raised-button>Create</button>
         </form>
 

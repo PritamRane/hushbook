@@ -106,12 +106,12 @@ app.post(
     multer({ storage: storage }).single("image"),
     function(req, res) {
         const url = req.protocol + "://" + req.get("host");
-
-        console.log(req.body);
+        console.log(url)
+        console.log(req.body.image);
         const NewBook = new Book({
             Title: req.body.Title,
             Author: req.body.Author,
-            Cover: url + "/images/" + req.file.filename,
+            Cover: req.body.image,
             Price: req.body.Price,
             Stock: req.body.Stock,
         });
