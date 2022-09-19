@@ -19,4 +19,8 @@ export class OptionsComponent implements OnInit {
   delete() {
     this.router.navigate(['/admin/options/delete']);
   }
+
+  logout() {
+    this.router.navigate(['/']);
+  }
 }

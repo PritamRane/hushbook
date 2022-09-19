@@ -39,6 +39,14 @@ html {
     transform: scale(1.07);
 }
 
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    color:#000000;
+}
 .optioncard{
    
     background: transparent;

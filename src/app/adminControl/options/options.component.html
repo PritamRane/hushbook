@@ -18,6 +18,7 @@
                 <button mat-raised-button (click)="create()">Create</button>
                 <button mat-raised-button (click)="update()">Update</button>
                 <button mat-raised-button (click)="delete()">Delete</button>
+                <button mat-raised-button><a [routerLink]="'/'" [routerLinkActive]="['classbtn']" (click)="logout()">Logout</a></button>
             </mat-card>
         </div>
     </div>
