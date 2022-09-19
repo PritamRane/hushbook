@@ -74,9 +74,7 @@ export class AdminPanelComponent implements OnInit {
       this.form.value.title,
       this.form.value.price,
       this.form.value.image,
-
       this.form.value.author,
-
       this.form.value.stock
     );
     console.log(this.form.value.image);
