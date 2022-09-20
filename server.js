@@ -137,8 +137,8 @@ app.post(
     }
 );
 
-app.get("/api/search/:title", (req, res, next) => {
-    Book.findOne({ Title: req.params.title }, function(err, doc) {
+app.get("/api/search/:author", (req, res, next) => {
+    Book.findOne({ Author: req.params.author }, function(err, doc) {
         res.status(201).json({
             message: "fetched",
             book: doc,
@@ -363,7 +363,7 @@ app.post(
                 $set: {
                     Author: req.body.author,
                     Price: req.body.price,
-                    Cover: url + "/images/" + req.file.filename,
+                    Cover: req.body.image,
                     Stock: req.body.stock,
                 },
             }, { new: true },

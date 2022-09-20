@@ -5,7 +5,7 @@
     <form (submit)="onSearch(postForm)" #postForm="ngForm">
         <span class="spacer1"></span>
           <div class="searching">
-              <input type="search" name="search" required [ngModel]="book?.Title" placeholder="Search" />
+              <input type="search" name="search" required [ngModel]="book?.Author" placeholder="Search" />
               <button class="b1" type="submit">
           <span class="material-icons">search</span>
         </button>

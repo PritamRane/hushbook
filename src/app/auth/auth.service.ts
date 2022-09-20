@@ -148,21 +148,6 @@ export class AuthService {
       }
     );
   }
-  forget(email: string) {
-    this.http
-      .post('http://localhost:3000/testemail', { email: email })
-      .subscribe(
-        (response) => {
-          this.emailListener.next(true);
-          console.log(response);
-        },
-        (error) => {
-          this.emailListener.next(false);
-
-          console.log(error);
-        }
-      );
-  }
   createUserByAdmin(
     email: string,
     password: string,
@@ -410,32 +395,6 @@ export class AuthService {
 
   testmail() {}
 
-  changePassword(password: string, currentpass: string) {
-    console.log(password);
-    console.log(this.user);
-    const data = {
-      newpassword: password,
-      currentpass: currentpass,
-      user: this.user,
-    };
-    this.http
-      .post<{ message: string; user: AuthData }>(
-        'http://localhost:3000/changepassword',
-        data
-      )
-      .subscribe(
-        (response) => {
-          console.log(response);
-          this.changepassListener.next({ changed: true, failed: false });
-          this.user = response.user;
-        },
-        (error) => {
-          this.changepassListener.next({ changed: false, failed: true });
-
-          console.log(error);
-        }
-      );
-  }
   logout() {
     this.token = '';
     this.authStatusListener.next(false);
