@@ -159,7 +159,6 @@ app.post("/api/addingbooks", (req, res, next) => {
             if (err) {
                 console.log("error happened while updating");
             } else {
-                // console.log(doc);
             }
         }
     );
@@ -200,7 +199,6 @@ app.post("/api/addingbooks", (req, res, next) => {
 app.post("/api/addingFavbooks", (req, res, next) => {
     const book1 = req.body[0];
     const user1 = req.body[1];
-    // console.log(user1);
     console.log(book1);
 
     var x = false;
