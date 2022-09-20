@@ -86,3 +86,12 @@ a:hover{
     border-radius: 10px;
     border: 1px solid rgba(218, 200, 200, 0.434);
 }
+
+img{
+    height: 500px;
+}
+.admin{
+    position: fixed;
+    bottom: 0;
+    
+}

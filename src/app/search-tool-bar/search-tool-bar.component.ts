@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
@@ -66,4 +66,7 @@ export class SearchToolBarComponent implements OnInit {
   profile() {
     this.router.navigate(['/profile']);
   }
+
+
+  
 }

@@ -1,4 +1,4 @@
-<mat-toolbar class="animate__animated animate__fadeInDown header-color">
+<mat-toolbar class="animate__animated animate__fadeInDown header-color sticky" id="navbar">
     <button mat-mini-fab color="black" id="btn1" aria-label="Example icon button with a menu icon" (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
@@ -35,7 +35,7 @@
     </li>
   </ul>
 </mat-toolbar>
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container">
 </mat-drawer-container>
 <div class="example-sidenav-content"></div>
 <mat-drawer #drawer class="example-sidenav" mode="side">

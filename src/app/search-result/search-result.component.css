@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap");
+
 .example-container {
     width: 10px;
     height: auto;
@@ -138,8 +138,7 @@ p {
 
 .notfound {
     font-size: 30px;
-    color: #ea7166;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
     font-weight: bold;
 }
 

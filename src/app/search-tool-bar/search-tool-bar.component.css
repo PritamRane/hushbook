@@ -3,7 +3,6 @@
     /* width: 10px; */
     margin-left: 50%;
     height: auto;
-    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .example-sidenav-content {
@@ -229,4 +228,11 @@ mat-drawer {
 -moz-box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
 box-shadow: 1px 9px 10px 0px rgba(0,0,0,0.81);
     background-color: #2e2e2e;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
