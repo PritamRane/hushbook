@@ -31,6 +31,11 @@ export class OverallService {
       'http://localhost:3000/api/search/' + title
     );
   }
+  Search1(author: string) {
+    return this.http.get<{ message: string; book: BOOK }>(
+      'http://localhost:3000/api/search1/' + author
+    );
+  }
   getResult() {
     return this.book;
   }
