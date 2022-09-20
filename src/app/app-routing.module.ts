@@ -9,7 +9,6 @@ import { SearchToolBarComponent } from './search-tool-bar/search-tool-bar.compon
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { AuthGuard } from './auth/auth.guard';
 import { FavoriteListComponent } from './favorite-list/favorite-list.component';
-import { CheckOutComponent } from './check-out/check-out.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 import { OptionsComponent } from './adminControl/options/options.component';
@@ -32,7 +31,6 @@ const routes: Routes = [
     component: MainStoreComponent,
   },
   { path: 'fav', component: FavoriteListComponent, canActivate: [AuthGuard] },
-  { path: 'checkout', component: CheckOutComponent, canActivate: [AuthGuard] },
   { path: 'signup', component: SignUpComponent },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'admin/options', component: OptionsComponent },

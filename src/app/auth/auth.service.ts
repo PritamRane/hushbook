@@ -368,7 +368,6 @@ export class AuthService {
             console.log(expiresInDuration);
             const user = response.user;
             this.user = user;
-            // this.userEmail = email;
             console.log(user.email);
             console.log(this.user);
             this.setAuthTimer(expiresInDuration);

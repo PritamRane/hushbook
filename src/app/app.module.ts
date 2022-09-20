@@ -31,7 +31,6 @@ import { AdminPanelComponent } from './adminControl/create/create-book/admin-pan
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthInterceptor } from './auth/auth-interceptor';
 import { FavoriteListComponent } from './favorite-list/favorite-list.component';
-import { CheckOutComponent } from './check-out/check-out.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
 import { OptionsComponent } from './adminControl/options/options.component';
@@ -62,7 +61,6 @@ import { JwPaginationModule } from 'jw-angular-pagination';
     AdminPanelComponent,
     DashboardComponent,
     FavoriteListComponent,
-    CheckOutComponent,
     ProfileComponent,
     LoadingScreenComponent,
     OptionsComponent,
