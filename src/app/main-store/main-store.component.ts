@@ -8,6 +8,7 @@ import { OverallService } from '../overall.service';
 import { CartSnackbarComponent } from '../snack-bars/cart-snackbar/cart-snackbar.component';
 import { FavSnackbarComponent } from '../snack-bars/fav-snackbar/fav-snackbar.component';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import "../../../src/assets/smtp.js"
 
 @Component({
   selector: 'app-main-store',
