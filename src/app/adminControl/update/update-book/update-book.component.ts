@@ -22,18 +22,6 @@ export class UpdateBookComponent implements OnInit {
   form!: FormGroup;
   imagePreview!: string;
   constructor(private authService: AuthService, private _fb: FormBuilder) {}
-  onImagePicked(event: Event) {
-    const file = (event.target as HTMLInputElement).files![0];
-    this.form.patchValue({ image: file });
-    this.form.get('image')?.updateValueAndValidity();
-    console.log(file);
-    console.log(this.form);
-    const reader = new FileReader();
-    reader.onload = () => {
-      this.imagePreview = reader.result as string;
-    };
-    reader.readAsDataURL(file);
-  }
   ngOnInit(): void {
     this.form = this._fb.group({
       title: new FormControl(null, {
@@ -47,7 +35,6 @@ export class UpdateBookComponent implements OnInit {
       }),
       image: new FormControl(null, {
         validators: [Validators.required],
-        // asyncValidators: [mimeType],
       }),
       stock: new FormControl(null, {
         validators: Validators.compose([Validators.required]),

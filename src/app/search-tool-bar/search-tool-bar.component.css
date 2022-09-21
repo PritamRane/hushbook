@@ -164,10 +164,11 @@ mat-icon {
 
 .searching input {
     outline: none;
-    width: 250px;
+    width: 120px;
     height: 30px;
     padding: 10px;
     margin: 0;
+    font-size: 15px;
     border-radius: 0;
     border: none;
     background: #eff2f5;

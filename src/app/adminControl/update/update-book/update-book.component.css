@@ -52,24 +52,7 @@ form button {
 }
 
 
-::ng-deep .mat-focused .mat-form-field-label {
-    /*change color of label*/
-    color: purple !important;
-}
 
-::ng-deep.mat-form-field-underline {
-    /*change color of underline*/
-    background-color: purple !important;
-}
-
-::ng-deep.mat-form-field-ripple {
-    /*change color of underline when focused*/
-    background-color: purple !important;
-}
-
-::ng-deep input.mat-input-element {
-    color: black;
-}
 
 .image-preview img {
     border-radius: 12%;
