@@ -72,7 +72,11 @@
         <button class="btn2" mat-button (click)="logout()">Log Out</button>
       </div>
       <div *ngIf="!isAuthenticated">
-        <a class="btn2" mat-button routerLink="/" routerLinkActive="primary"
+        <a
+          class="btn2"
+          mat-button
+          routerLink="/login"
+          routerLinkActive="primary"
           >Login</a
         >
       </div>
