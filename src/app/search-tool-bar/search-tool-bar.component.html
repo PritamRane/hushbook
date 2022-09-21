@@ -5,13 +5,23 @@
     <form (submit)="onSearch(postForm)" #postForm="ngForm">
         <span class="spacer1"></span>
           <div class="searching">
-              <input type="search" name="search" required [ngModel]="book?.Author" placeholder="Search" />
+              <input type="search" name="search" required [ngModel]="book?.Title" placeholder="Search Title" />
               <button class="b1" type="submit">
           <span class="material-icons">search</span>
         </button>
           </div>
         <span class="spacer1"></span>
     </form>
+    <form (submit)="onSearch1(postForm1)" #postForm1="ngForm">
+      <span class="spacer1"></span>
+        <div class="searching">
+            <input type="search1" name="search1" required [ngModel]="book?.Author" placeholder="Search Author" />
+            <button class="b1" type="submit">
+        <span class="material-icons">search</span>
+      </button>
+        </div>
+      <span class="spacer1"></span>
+  </form>
    
 
     <span class="nameofweb kclass animate__animated animate__fadeInDown" (click)="gohome()">
