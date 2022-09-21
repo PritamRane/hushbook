@@ -83,6 +83,7 @@ export class SearchToolBarComponent implements OnInit {
     this.router.navigate(['/profile']);
   }
 
+  
 
   
 }

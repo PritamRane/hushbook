@@ -50,6 +50,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JwPaginationModule } from 'jw-angular-pagination';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,6 +78,7 @@ import { JwPaginationModule } from 'jw-angular-pagination';
     CartSnackbarComponent,
     FavSnackbarComponent,
     SignUpSuccessfullyComponent,
+  
   ],
   imports: [
     BrowserModule,
