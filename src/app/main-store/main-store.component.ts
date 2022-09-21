@@ -16,6 +16,7 @@ import "../../../src/assets/smtp.js"
   styleUrls: ['./main-store.component.css'],
 })
 export class MainStoreComponent implements OnInit {
+  
   showFiller = false;
   open2 = true;
   books: any;
@@ -71,6 +72,8 @@ export class MainStoreComponent implements OnInit {
       .subscribe((isauthenticated) => {
         this.isAuthenticated = isauthenticated;
       });
+      
+      
   }
   
 
