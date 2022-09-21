@@ -31,7 +31,6 @@ export class SearchToolBarComponent implements OnInit {
         this.router.navigate(['/searchresult', { ...this.book }]);
       }, 1000);
     });
-    
   }
   onSearch1(form: NgForm) {
     if (form.invalid) {
@@ -46,8 +45,8 @@ export class SearchToolBarComponent implements OnInit {
         this.router.navigate(['/searchresult', { ...this.book }]);
       }, 1000);
     });
-    
   }
+
   logout() {
     this.authService.logout();
   }
@@ -82,8 +81,4 @@ export class SearchToolBarComponent implements OnInit {
   profile() {
     this.router.navigate(['/profile']);
   }
-
-  
-
-  
 }

@@ -36,7 +36,6 @@ export class OverallService {
       'http://localhost:3000/api/search1/' + author
     );
   }
-
   getResult() {
     return this.book;
   }

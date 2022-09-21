@@ -1,56 +1,91 @@
-<mat-toolbar class="animate__animated animate__fadeInDown header-color sticky" id="navbar">
-    <button mat-mini-fab color="black" id="btn1" aria-label="Example icon button with a menu icon" (click)="drawer.toggle()">
+<mat-toolbar
+  class="animate__animated animate__fadeInDown header-color sticky"
+  id="navbar"
+>
+  <button
+    mat-mini-fab
+    color="black"
+    id="btn1"
+    aria-label="Example icon button with a menu icon"
+    (click)="drawer.toggle()"
+  >
     <mat-icon>menu</mat-icon>
   </button>
-    <form (submit)="onSearch(postForm)" #postForm="ngForm">
-        <span class="spacer1"></span>
-          <div class="searching">
-              <input type="search" name="search" required [ngModel]="book?.Title" placeholder="Search Title" />
-              <button class="b1" type="submit">
-          <span class="material-icons">search</span>
-        </button>
-          </div>
-        <span class="spacer1"></span>
-    </form>
-    <form (submit)="onSearch1(postForm1)" #postForm1="ngForm">
-      <span class="spacer1"></span>
-        <div class="searching">
-            <input type="search1" name="search1" required [ngModel]="book?.Author" placeholder="Search Author" />
-            <button class="b1" type="submit">
+  <form (submit)="onSearch(postForm)" #postForm="ngForm">
+    <span class="spacer1"></span>
+    <div class="searching">
+      <input
+        type="search"
+        name="search"
+        required
+        [ngModel]="book?.Title"
+        placeholder="Search By Tittle"
+      />
+      <button class="b1" type="submit">
         <span class="material-icons">search</span>
       </button>
-        </div>
-      <span class="spacer1"></span>
+    </div>
+    <span class="spacer1"></span>
   </form>
-   
+  <form (submit)="onSearch1(postForm1)" #postForm1="ngForm">
+    <span class="spacer1"></span>
+    <div class="searching">
+      <input
+        type="search1"
+        name="search1"
+        required
+        [ngModel]="book?.Author"
+        placeholder="Search By Author"
+      />
+      <button class="b1" type="submit">
+        <span class="material-icons">search</span>
+      </button>
+    </div>
+    <span class="spacer1"></span>
+  </form>
 
-    <span class="nameofweb kclass animate__animated animate__fadeInDown" (click)="gohome()">
+  <span
+    class="nameofweb kclass animate__animated animate__fadeInDown"
+    (click)="gohome()"
+  >
     HushBook
-    </span>
-    <span class="spacer"></span>
+  </span>
+  <span class="spacer"></span>
 
-    <ul>
-        <li>
-            <div *ngIf="isAuthenticated">
-                <img src="{{ user.image }}" (click)="profile()" class="imgformat animate__animated animate__fadeInDown" width="50" height="50" />
-                <span class="animate__animated animate__fadeInDown" (click)="profile()" style="color: white; margin-right:10px;">{{ user.username }}</span
+  <ul>
+    <li>
+      <div *ngIf="isAuthenticated">
+        <img
+          src="{{ user.image }}"
+          (click)="profile()"
+          class="imgformat animate__animated animate__fadeInDown"
+          width="50"
+          height="50"
+        />
+        <span
+          class="animate__animated animate__fadeInDown"
+          (click)="profile()"
+          style="color: white; margin-right: 10px"
+          >{{ user.username }}</span
         >
         <span class="spacer99"></span>
-                <button class="btn2" mat-button (click)="logout()">Log Out</button>
-            </div>
-            <div *ngIf="!isAuthenticated">
-                <a class="btn2" mat-button routerLink="/" routerLinkActive="primary">Login</a
+        <button class="btn2" mat-button (click)="logout()">Log Out</button>
+      </div>
+      <div *ngIf="!isAuthenticated">
+        <a class="btn2" mat-button routerLink="/" routerLinkActive="primary"
+          >Login</a
         >
       </div>
     </li>
   </ul>
 </mat-toolbar>
-<mat-drawer-container class="example-container">
-</mat-drawer-container>
+<mat-drawer-container class="example-container"> </mat-drawer-container>
 <div class="example-sidenav-content"></div>
 <mat-drawer #drawer class="example-sidenav" mode="side">
   <div class="sider">
-    <button mat-button color="accent" (click)="godashboard()">Purchase History</button>
+    <button mat-button color="accent" (click)="godashboard()">
+      Purchase History
+    </button>
     <br />
     <button mat-button color="accent" (click)="gotoFav()">My Favorites</button>
     <br />

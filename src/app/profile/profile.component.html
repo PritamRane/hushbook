@@ -1,49 +1,88 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  </head>
 
-<head></head>
-
-<body>
-    <div class="maincontainer">
-        <div class="leftcontainer">
-            <div>
-                <div class="imgcontainer">
-                    <img src="{{ user.image }}" class="imgformat animate__animated animate__fadeInDown" width="250" height="250" />
-                </div>
-            </div>
+  <body>
+    <!-- <div class="maincontainer">
+      <div class="leftcontainer">
+        <div>
+          <div class="imgcontainer">
+            <img
+              src="{{ user.image }}"
+              class="imgformat animate__animated animate__fadeInDown"
+              width="250"
+              height="250"
+            />
+          </div>
         </div>
-        <div class="spacer"></div>
-        <mat-card class="cardContainer">
-            <div>
-                <p class="title animate__animated animate__fadeInDown">
-                    Profile
-                </p>
-            </div>
-            <hr />
-            <div class="inlinecontainer">
-                <div class="rowcontainers animate__animated animate__fadeInDown">
-                    <div class="font">Email</div>
-                    <div class="font" id="inform">{{ user.email }}</div>
-                </div>
-                
-            </div>
-            <div class="margintop inlinecontainer">
-                <div class="rowcontainers animate__animated animate__fadeInDown">
-                    <div class="font">Username</div>
-                    <div class="font" id="inform">{{ user.username }}</div>
-                </div>
+      </div>
+      <div class="spacer"></div>
+      <mat-card class="cardContainer">
+        <div>
+          <p class="title animate__animated animate__fadeInDown">Profile</p>
+        </div>
+        <hr />
+        <div class="inlinecontainer">
+          <div class="rowcontainers animate__animated animate__fadeInDown">
+            <div class="font">Email</div>
+            <div class="font" id="inform">{{ user.email }}</div>
+          </div>
+        </div>
+        <div class="margintop inlinecontainer">
+          <div class="rowcontainers animate__animated animate__fadeInDown">
+            <div class="font">Username</div>
+            <div class="font" id="inform">{{ user.username }}</div>
+          </div>
 
-                <div class="pass2 rowcontainers animate__animated animate__fadeInDown">
-                    <div class="font">Mobile</div>
-                    <div class="font" id="inform">{{ user.mobile }}</div>
-                </div>
-                <div class="pass2 rowcontainers animate__animated animate__fadeInDown">
-                    <div class="font">Favourite Genre</div>
-                    <div class="font" id="inform">{{ user.genre }}</div>
-                </div>
+          <div
+            class="pass2 rowcontainers animate__animated animate__fadeInDown"
+          >
+            <div class="font">Mobile</div>
+            <div class="font" id="inform">{{ user.mobile }}</div>
+          </div>
+          <div
+            class="pass2 rowcontainers animate__animated animate__fadeInDown"
+          >
+            <div class="font">Favourite Genre</div>
+            <div class="font" id="inform">{{ user.genre }}</div>
+          </div>
+        </div>
+      </mat-card>
+    </div> -->
+
+    <div class="wrapper">
+      <div class="left">
+        <img src="{{ user.image }}" alt="user" width="100" />
+        <h4>{{ user.username }}</h4>
+        <p>Username</p>
+      </div>
+      <div class="right">
+        <div class="info">
+          <h3>Profile</h3>
+          <div class="info_data">
+            <div class="data">
+              <h4>Email</h4>
+              <p>{{ user.email }}</p>
             </div>
-        </mat-card>
+            <div class="data">
+              <h4>Mobile</h4>
+              <p>{{ user.mobile }}</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <h3>Information</h3>
+          <div class="projects_data">
+            <div class="data">
+              <h4>Favourite Genre</h4>
+              <p>{{ user.genre }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
