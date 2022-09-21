@@ -1,132 +1,244 @@
 .leftcontainer {
-    width: 500px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 html,
 body {
-    height: 100%;
-    background: white;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.52'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
-
+  height: 100%;
+  background: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.52'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
 }
 
 img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .imgcontainer {
-    padding: 5em;
-    margin-left: 3em;
+  padding: 5em;
+  margin-left: 3em;
 }
 
 .hi {
-    font-size: 30px;
-    margin-left: 5em;
-    color: white;
+  font-size: 30px;
+  margin-left: 5em;
+  color: white;
 }
 
 .maincontainer {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 .spacer {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 mat-card {
-    width: 100%;
+  width: 100%;
 }
 
 .title {
-    font-size: 30px;
-    font-weight: bold;
-    padding-left: 1em;
-    padding-top: 1em;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 .cardContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .inlinecontainer {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .font {
-    padding-left: 1em;
-    font-size: 20px;
-    font-weight: bold;
+  padding-left: 1em;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .pass {
-    padding-left: 15em;
-    font-size: 20px;
-    font-weight: bold;
+  padding-left: 15em;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .rowcontainers {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #inform {
-    font-weight: 100;
-    font-size: 15px;
-    margin-left: 0.5em;
+  font-weight: 100;
+  font-size: 15px;
+  margin-left: 0.5em;
 }
 
 .pass1 {
-    margin-left: 5.5em;
+  margin-left: 5.5em;
 }
 
-.mat-form-field+.mat-form-field {
-    margin-left: 8px;
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
 }
 
 .expansion {
-    margin-left: 16.5em;
-    margin-top: 2px;
+  margin-left: 16.5em;
+  margin-top: 2px;
 }
 
 #btn {
-    background: purple;
-    color: white;
+  background: purple;
+  color: white;
 }
 
 .alert1 {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .margintop {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .pass2 {
-    margin-left: 7.5em;
+  margin-left: 7.5em;
 }
 
 .warning {
-    color: rgb(0, 0, 0);
-    animation: flash 2s infinite;
+  color: rgb(0, 0, 0);
+  animation: flash 2s infinite;
 }
 
 @keyframes flash {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+}
+
+.wrapper .left {
+  width: 35%;
+  background: #808080;
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.wrapper .left h4 {
+  margin-bottom: 10px;
+}
+
+.wrapper .left p {
+  font-size: 12px;
+}
+
+.wrapper .right {
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects {
+  margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3 {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data,
+.wrapper .right .projects_data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .right .info_data .data,
+.wrapper .right .projects_data .data {
+  width: 45%;
+}
+
+.wrapper .right .info_data .data h4,
+.wrapper .right .projects_data .data h4 {
+  color: #353c4e;
+  margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p,
+.wrapper .right .projects_data .data p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #919aa3;
+}
+
+.wrapper .social_media ul {
+  display: flex;
+}
+
+.wrapper .social_media ul li {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right, #01a9ac, #01dbdf);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.wrapper .social_media ul li a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
 }
