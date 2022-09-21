@@ -23,9 +23,12 @@ import { UpdateBookComponent } from './adminControl/update/update-book/update-bo
 import { DeleteBookComponent } from './adminControl/delete/delete-book/delete-book.component';
 import { SignUpSuccessfullyComponent } from './sign-up-successfully/sign-up-successfully.component';
 
-
 const routes: Routes = [
-  { path: '', component: LoginPageComponent },
+  { path: 'login', component: LoginPageComponent },
+  {
+    path: '',
+    component: MainStoreComponent,
+  },
   {
     path: 'mainstore',
     component: MainStoreComponent,
